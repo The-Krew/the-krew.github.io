@@ -1,14 +1,14 @@
-@font-face{
-    font-family:"Nunito";
-    src: url(inculdes/fonts/nunito/Nunito-Black.ttf);
-    font-weight: bold;
-}
-@font-face{
-    font-family:"BalooBhaina2";
-    src: url(inculdes/fonts/baloo/BalooBhaina2-Bold.ttf);
-    font-weight: bold;
-}
 
+@font-face{
+    font-family:"Baloo";
+    src: url(includes/fonts/baloo/BalooBhaina2-Regular.ttf);
+    font-weight: bold;
+}
+@font-face{
+    font-family: "Nunito";
+    src: url(includes/fonts/nunito/Nunito-Bold.ttf);
+    font-weight: bold;
+}
 *{
     font-size: 18px;
 }
@@ -18,9 +18,10 @@
 }
 
 #Font-test-Nunito{
-    font-family: "Nunito", cursive;
+    font-family: "Nunito";
 }
 
 #Font-test-Baloo{
-    font-family: "BalooBhaina2", cursive;
+    font-family: "Baloo";
 }
+
