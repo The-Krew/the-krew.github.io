@@ -1,0 +1,26 @@
+@font-face{
+    font-family:"Nunito";
+    src: url(inculdes/fonts/nunito/Nunito-Black.ttf);
+    font-weight: bold;
+}
+@font-face{
+    font-family:"Baloo_Bhaina_2";
+    src: url(inculdes/fonts/baloo/BalooBhaina2-Bold.ttf);
+    font-weight: bold;
+}
+
+*{
+    font-size: 18px;
+}
+#meth{
+    position: fixed;
+    margin-left: 500px;
+}
+
+#Font-test-Nunito{
+    font-family: "Nunito", cursive;
+}
+
+#Font-test-Baloo{
+    font-family: "Baloo_Bhaina_2", cursive;
+}
