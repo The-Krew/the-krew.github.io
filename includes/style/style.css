@@ -1,8 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-*{
-    font-size: 18px;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #071656;
+  overflow-x: hidden;
+  padding-top: 50px;
+  transition: 0.5s;
 }
+
+.sidenav a{
+  font-family: 'Oswald', sans-serif;
+  padding: 12px 8px 12px 32px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 25px;
+  color: #E7E7E7;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover{
+  color: #FFFFFF;
+  padding-left: 45px;
+}
+
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.main{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  transition: margin-left 0.5s;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.main .arrow{
+  width: 20px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.main .arrow:hover{
+  transition: 0.6s;
+  background-color: #D5D5D5;
+  border-radius: 15px;
+}
+
 #meth{
     position: fixed;
     margin-left: 500px;
@@ -15,4 +71,3 @@
 #Font-test-Baloo{
     font-family: "Baloo+Paaji+2" , cursive;
 }
-
