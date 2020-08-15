@@ -1,24 +1,43 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title> The Krew - private website | METH </title>
-    <link rel="stylesheet" href="includes/style/style.css">
-    <script src="includes/sidenav.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>SpencerMeth</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="includes/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="includes/style/main.css">
   </head>
   <body>
-    <div id="sidenav" class="sidenav">
-      <a href="#" class="closebtn" onclick="CloseNav()">&times;</a>
-      <a href="index.html">Main page</a>
-      <a href="spencermeme.html">Spencer memísek</a>
-      <a href="#">To be filled in</a>
-      <a href="#">To be filled in</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <a class="navbar-brand" style="color:orange">The Krew Github Website</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-3">
+        <img src="includes/images/img_inside.png" class="fill" title="Spencer-Meth">
+      </div>
+      <div class="col-lg-8"></div>
     </div>
-
-    <div id="main" class="main">
-      <img id="arrow" class="arrow" onclick="OpenNav()" src="includes/images/right_arrow.png"><br>
-      <img src="includes/images/img_inside.png" id="meth" title="Spencer-Meth">
-    </div>
+    <script src="includes/javascript/jquery.min.js"></script>
+    <script src="includes/bootstrap/bootstrap.js"></script>
   </body>
 </html>
