@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .fill {
   width:  100%;
 }
@@ -5,5 +9,7 @@
   background-color: #eceeef;
 }
 body {
-  background-color: #eceeef;
+  margin-top: -36pt;
+  background-color: #343a40;
+  overflow-x: hidden;
 }
