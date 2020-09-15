@@ -15,7 +15,7 @@
     </style>
   </head>
   <body style="background: rgb(120,120,120);" onload="Load()">
-    <button type="button" class="btn btn-warning" name="button"><a href="../../index.html">Vrátit se</a></button>
+    <button type="button" class="btn btn-warning" onclick="Back()">Vrátit se</button>
   <div class="row" style="margin:0;">
     <div class="col-md-3"></div>
     <div class="col-md-6">
@@ -89,6 +89,9 @@
       function Reload() {
         location.reload();
       }
+    function Back() {
+      window.location.replace("../../index.html");
+    }
     </script>
   </body>
 </html>
