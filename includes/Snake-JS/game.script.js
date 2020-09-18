@@ -15,9 +15,9 @@ const colors = {
   board_border: 'rgb(0,0,0)', // Black
   board_background: 'rgb(255,255,255)', // White
   snake_col: 'rgb(255,0,255)', // Purple
-  snake_border: 'rgb(230,0,230)', // DarkPurple
+  snake_border: 'rgb(0,0,0)', // DarkPurple
   food_background: 'rgb(30,255,30)', // LightGreen
-  food_border: 'rgb(0,230,0)',// DarkGreen
+  food_border: 'rgb(0,0,0)',// DarkGreen
   wall_background: 'rgb(255,30,30)', // LightGreen
   wall_border: 'rgb(0,0,0)'// DarkGreen
 };
@@ -105,7 +105,9 @@ function drawFood() {
 }
 
 function gen_walls() {
-  cords = [random(10,snakeboard.width - 10), random(10,snakeboard.height - 10)];
+  let wall_gen_x = random(10,snakeboard.width - 10);
+  let wall_gen_y = random(10,snakeboard.width - 10);
+  cords = [wall_gen_x,wall_gen_y];
   return cords;
 }
 
@@ -141,10 +143,21 @@ function random(min, max) {
 }
 
 function gen_food() {
-  food_x = random(10,snakeboard.width - 20);
-  food_y = random(10,snakeboard.height - 20);
-  food_cords = [food_x, food_y];
-  if(!walls.includes(food_cords)) {
+  let inArray = false;
+  let temp_food_x = random(10,snakeboard.width - 20);
+  let temp_food_y = random(10,snakeboard.height - 20);
+  for (var position = 0; position < walls.length; position++) {
+    if(inArray) break;
+    if(walls[position][0] == temp_food_x && walls[position][1] == temp_food_y) {
+       inArray = true;
+       break;
+    } else {
+      inArray = false;
+    }
+  }
+  if(!inArray) {
+    food_x = temp_food_x;
+    food_y = temp_food_y;
     snake.forEach(function has_snake_eaten_food(part) {
       const has_eaten = part.x == food_x && part.y == food_y;
       if (has_eaten) gen_food();
@@ -152,8 +165,6 @@ function gen_food() {
   } else {
     gen_food();
   }
-  // if the new food location is where the snake currently is, generate a new food location
-
 }
 
 function change_direction(event) {
