@@ -4,11 +4,7 @@ const snakeboard_ctx = snakeboard.getContext("2d");
 document.addEventListener("keydown", change_direction);
 // Snake and his body
 let snake = [
-  {x: 200, y: 200},
-  {x: 190, y: 200},
-  {x: 180, y: 200},
-  {x: 170, y: 200},
-  {x: 160, y: 200}
+  {x: 200, y: 200}
 ];
 // Colors used in game
 const colors = {
